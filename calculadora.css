@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+  
+body{
+  background-color: rgb(226, 226, 226);
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+main{
+  background-color: rgb(76, 76, 76);
+  border-radius: 20px;
+  width: 90%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#tela{
+  background-color: white;
+  color: black;
+  padding: 15px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  min-height: 50px;
+  text-align: right;
+  overflow-x: auto;
+}
+
+#teclas{
+  display: flex;
+  gap: 10px;
+}
+
+#teclas-esquerda{
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#teclas-esquerda-superior{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+#teclas-esquerda-inferior{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
+}
+
+#teclas-direita{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#teclas-direita-superior, 
+#teclas-direita-inferior{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+#teclas p{
+  background-color: #666;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  padding: 15px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.2s;
+}
+
+#teclas p:hover{
+  background-color: #555;
+}
+
+
+@media (max-width: 350px){
+  #teclas p{
+    padding: 12px;
+    font-size: 1rem;
+  }
+
+  #tela{
+    font-size: 1.2rem;
+  }
+}

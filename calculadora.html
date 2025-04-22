@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Calculadora">
+    <meta content="keywords" content="calculadora">
+    <meta content="author" content="Polyana Ramos Araújo">
+    <link rel="stylesheet" href="calculadora.css"></link>
+    <title>Calculadora</title>
+</head>
+<body>
+    <main>
+        <div id="tela">
+            <p id="calculo">0</p>
+        </div>
+        <div id="teclas">
+            <div id="teclas-esquerda">
+                <div id="teclas-esquerda-superior">
+                    <p id="limpa" onclick="limpa()">C</p>
+                    <p id="soma" onclick="operadores('+')">+</p>
+                    <p id="subtracao" onclick="operadores('-')">-</p>
+                    <p id="sete" onclick="numero(7)">7</p>
+                    <p is="oito" onclick="numero(8)">8</p>
+                    <p id="nove" onclick="numero(9)">9</p>
+                    <p id="quatro" onclick="numero(4)">4</p>
+                    <p id="cinco" onclick="numero(5)">5</p>
+                    <p id="seis" onclick="numero(6)">6</p>
+                    <p id="um" onclick="numero(1)">1</p>
+                    <p id="dois" onclick="numero(2)">2</p>
+                    <p id="tres" onclick="numero(3)">3</p>
+                </div>
+                <div id="teclas-esquerda-inferior">
+                    <p id="zero" onclick="numero(0)">0</p>
+                    <p id="ponto" onclick="ponto('.')">.</p>
+                </div>
+            </div>
+            <div id="teclas-direita">
+                <div id="teclas-direita-superior">
+                    <p id="multiplicacao" onclick="operadores('x')">x</p>
+                    <p id="divisao" onclick="operadores('÷')">÷</p>
+                    <p id="porcentagem" onclick="operadores('%')">%</p>    
+                </div>
+                <div id="teclas-direita-inferior">
+                    <p id="igual" onclick="calculo()" style="background-color: rgb(208, 135, 0);">=</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="calculadora.js"></script>
+</body>
+</html>
