@@ -2,6 +2,7 @@
 
 Este é um projeto simples de uma calculadora desenvolvido com HTML, CSS e JavaScript. O objetivo é treinar habilidades em manipulação de DOM, funcionalidades CSS, responsividade, eventos JavaScript e práticas de organização e escrita de código limpo.
 
+
 ## 🚀 Funcionalidades
 
 - Adição (`+`)
@@ -13,6 +14,12 @@ Este é um projeto simples de uma calculadora desenvolvido com HTML, CSS e JavaS
 - Limpar (`C`)
 - Interface responsiva
 
+
+## 📅 Última Atualização
+
+18/04/2025
+
+
 ## 👩‍💻 Autora
 
-**Polyana Ramos Araújo**
+Polyana Ramos Araújo
